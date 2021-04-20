@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Podcast :content= "podcast"  />  
+    <Podcast :content= "podcast"  />  
+    <Podcast :content= "podcast"  />  
+    <Podcast :content= "podcast"  />  
+
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Podcast from "./components/Podcast.vue"
+  
+  export default{
+    name: 'App',
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      podcast: {
+        event_1: "DATA STRUCTURES",
+        name_1: "Jacqueline Cardozo",
+        profession_1: "Front-end Dev Leader",
+        event_2: "TECH TO WATCH IN 2020",
+        name_2: "João Olivio",
+        profession_2: "Front-end Dev Leader",
+        event_3: "HOW TO GET BETTER AT PROBLEM SOLVING",
+        name_3: "Derrick Pierce",
+        profession_3: "Front-end Dev Leader",
+        event_4: "DATA STRUCTURES",
+        name_4: "Jacqueline Cardozo",
+        profession_4: "Front-end Dev Leader"
+      }
+    }
+  }, 
+      
+    components: { 
+      Podcast 
+    } 
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body{
+    background: rgb(240, 240, 240);
+  }
 </style>
