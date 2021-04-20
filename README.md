@@ -14,7 +14,7 @@
 <h2>Instalação</h2>
 <p>Clone o projeto Git em seu repositório local com:</p>
 
-<p>Git clone:<span <strong>https://github.com/khuandreyrivas/Projects.git</strong></P
+<p>Git clone: <span <strong>https://github.com/khuandreyrivas/Projects.git</strong></P
 
 <h2>Utilização:</h2>
 <p>Na pasta raiz do projeto, rode o comando:</P>
